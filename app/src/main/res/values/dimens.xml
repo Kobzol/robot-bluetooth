@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="mezera_8dp">8dp</dimen>
+    <dimen name="font_12sp">12sp</dimen>
+    <dimen name="font_20sp">20sp</dimen>
+    <dimen name="mezera_16dp">16dp</dimen>
+    <dimen name="mezera_30dp">30dp</dimen>
+    <dimen name="mezera_50dp">50dp</dimen>
+    <dimen name="mezera_40dp">40dp</dimen>
+
+</resources>

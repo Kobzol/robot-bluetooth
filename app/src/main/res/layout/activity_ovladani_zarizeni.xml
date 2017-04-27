@@ -1,0 +1,167 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/kontajner"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cz.ghrabuvka.robotak.aktivity.OvladaniZarizeni"
+    tools:ignore="MergeRootFrame" >
+
+    <RelativeLayout
+        android:id="@+id/namerene_hodnoty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/sonary_mereni_popis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/mezera_8dp"
+            android:text="@string/ovladani_sonary_popis" />
+
+        <TextView
+            android:id="@+id/sonary_mereni_hodnota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/sonary_mereni_popis"
+            android:layout_marginLeft="@dimen/mezera_16dp"
+            android:layout_toRightOf="@+id/sonary_mereni_popis" />
+
+        <TextView
+            android:id="@+id/kompas_mereni_popis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/sonary_mereni_popis"
+            android:layout_below="@id/sonary_mereni_popis"
+            android:text="@string/ovladani_kompas_popis" />
+
+        <TextView
+            android:id="@+id/kompas_mereni_hodnota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/kompas_mereni_popis"
+            android:layout_alignLeft="@id/sonary_mereni_hodnota"
+            android:layout_toRightOf="@id/kompas_mereni_popis" />
+
+        <TextView
+            android:id="@+id/motory_mereni_popis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kompas_mereni_popis"
+            android:layout_margin="@dimen/mezera_8dp"
+            android:text="@string/ovladani_motory_popis" />
+
+        <TextView
+            android:id="@+id/motory_mereni_hodnota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/motory_mereni_popis"
+            android:layout_alignLeft="@+id/kompas_mereni_hodnota" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/manualni_ovladani"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/namerene_hodnoty"
+        android:layout_margin="@dimen/mezera_8dp" >
+
+        <LinearLayout
+            android:id="@+id/manualni_ovladani_popis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/manualni_ovladani_prikaz_centrovac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/manualni_ovladani_prikaz_popis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/ovladani_manualni_prikaz" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/manualni_ovladani_hodnota_centrovac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/manualni_ovladani_hodnota_popis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/ovladani_manualni_hodnota" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/manualni_ovladani_pole"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/manualni_ovladani_popis"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/manualni_ovladani_prikaz_pole"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/manualni_ovladani_hodnota_pole"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/manualni_ovladani_odeslat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/manualni_ovladani_pole"
+            android:layout_margin="@dimen/mezera_8dp"
+            android:minHeight="@dimen/mezera_40dp"
+            android:text="@string/ovladani_manualni_odeslat_prikaz" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/prikazy_obalka"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/manualni_ovladani"
+        android:layout_centerHorizontal="true" >
+
+        <RelativeLayout
+            android:id="@+id/prikazy_obalka_vnitrni"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/mezera_8dp" >
+
+            <GridLayout
+                android:id="@+id/prikazy"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:columnCount="@integer/int_3"
+                android:orientation="horizontal" >
+
+            </GridLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

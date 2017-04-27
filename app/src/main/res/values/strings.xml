@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="nazev_aplikace">Robotak</string>
+    <string name="vyhledani_nadpis">Vyhledávání zařízení</string>
+    <string name="vyhledani_vyhledat">Vyhledat zařízení</string>
+    <string name="menu_bluetooth_zapnout">Zapnout Bluetooth</string>
+    <string name="dialog_bluetooth_titulek">Zapnutí Bluetoothu</string>
+    <string name="dialog_bluetooth_text">Bluetooth je vypnut. Chcete ho zapnout?</string>
+    <string name="dialog_bluetooth_zapnout">Zapnout</string>
+    <string name="dialog_bluetooth_zrusit">Zrušit</string>
+    <string name="vyhledani_stav_bluetoothu">Bluetooth</string>
+    <string name="vyhledani_stav_bluetoothu_zapnut">zapnut</string>
+    <string name="vyhledani_stav_bluetoothu_vypnut">vypnut</string>
+    <string name="dialog_nacitani_titulek">Počkejte prosím</string>
+    <string name="dialog_nacitani_bluetooth_pripojeni">Připojuji k zařízení...</string>
+    <string name="pripojeni_zarizeni_chyba">Nepovedlo se připojit k zařízení.</string>
+    <string name="pripojeni_zarizeni_uspech">Připojeno k zařízení.</string>
+    <string name="ovladani_nadpis">Ovládání zařízení</string>
+    <string name="ovladani_zarizeni_neni_pripojeno">Žádné zařízení není připojeno.</string>
+    <string name="ovladani_sonary_popis">Sonary:</string>
+    <string name="ovladani_kompas_popis">Kompas:</string>
+    <string name="ovladani_motory_popis">Motory:</string>
+    <string name="prikazy_seznam_upravit">Upravit</string>
+    <string name="prikazy_menu_upravit_prikazy">Upravit příkazy</string>
+    <string name="prikazy_uprava_prikaz_nazev">Název příkazu</string>
+    <string name="prikazy_uprava_prikaz_prikaz">Příkaz</string>
+    <string name="prikazy_seznam_pridat_prikaz">Přidat příkaz</string>
+    <string name="dialog_uprava_prikazu">Úprava příkazu</string>
+    <string name="dialog_uprava_prikazu_smazat">Smazat</string>
+    <string name="dialog_uprava_prikazu_ulozit">Uložit</string>
+    <string name="dialog_uprava_prikazu_zpet">Zpět</string>
+    <string name="ovladani_manualni_prikaz">Příkaz</string>
+    <string name="ovladani_manualni_hodnota">Hodnota</string>
+    <string name="ovladani_manualni_odeslat_prikaz">Odeslat příkaz</string>
+    <string name="odeslani_zpravy_chyba">Nepodařilo se odeslat zprávu.</string>
+    <string name="kompas_nadpis">Kompas</string>
+    <string name="kompas_uhel_popis">Úhel:</string>
+    <string name="ovladani_menu_kompas">Detail kompasu</string>
+    <string name="zprava_odpoved_chyba">Špatná odpověď</string>
+    <string name="sonary_nadpis">Sonary</string>
+    <string name="ovladani_menu_sonary">Detaily sonarů</string>
+    <string name="sonary_vzdalenosti_popis">Vzdálenosti:</string>
+
+</resources>

@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sonary_kontajner"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cz.ghrabuvka.robotak.aktivity.DetailSonaru"
+    tools:ignore="MergeRootFrame" >
+
+    <RelativeLayout
+        android:id="@+id/vzdalenosti_kontajner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/vzdalenosti_popis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/mezera_8dp"
+            android:text="@string/sonary_vzdalenosti_popis" />
+
+        <TextView
+            android:id="@+id/vzdalenosti_hodnoty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/vzdalenosti_popis"
+            android:layout_toRightOf="@+id/vzdalenosti_popis" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/zobrazeni_sonaru_kontajner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/vzdalenosti_kontajner" >
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

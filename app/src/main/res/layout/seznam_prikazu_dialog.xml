@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/prikazy_kontajner"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ListView
+        android:id="@+id/seznam_prikazu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/pridat_prikaz"
+        android:layout_alignParentTop="true" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/pridat_prikaz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/mezera_8dp"
+        android:text="@string/prikazy_seznam_pridat_prikaz" />
+
+</RelativeLayout>

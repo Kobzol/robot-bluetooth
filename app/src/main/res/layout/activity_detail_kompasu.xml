@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/kompas_kontajner"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/uhel_kontajner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/uhel_popis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/mezera_8dp"
+            android:text="@string/kompas_uhel_popis" />
+
+        <TextView
+            android:id="@+id/uhel_hodnota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/uhel_popis"
+            android:layout_marginRight="@dimen/mezera_8dp"
+            android:layout_marginTop="@dimen/mezera_8dp"
+            android:layout_toRightOf="@id/uhel_popis" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ruzice_kontajner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/uhel_kontajner"
+        tools:context="cz.ghrabuvka.robotak.aktivity.DetailKompasu"
+        tools:ignore="MergeRootFrame" >
+
+    </RelativeLayout>
+
+</RelativeLayout>

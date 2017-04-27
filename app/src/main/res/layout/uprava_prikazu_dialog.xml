@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/seznam_prikazu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/prikaz_nazev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/prikaz_nazev_popis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/mezera_8dp"
+            android:text="@string/prikazy_uprava_prikaz_nazev" />
+
+        <EditText
+            android:id="@+id/prikaz_nazev_pole"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/prikaz_nazev_popis"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/mezera_8dp"
+            android:ems="10"
+            android:inputType="text" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/prikaz_prikaz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/prikaz_nazev" >
+
+        <TextView
+            android:id="@+id/prikaz_prikaz_popis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/mezera_8dp"
+            android:text="@string/prikazy_uprava_prikaz_prikaz" />
+
+        <EditText
+            android:id="@+id/prikaz_prikaz_pole"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/prikaz_prikaz_popis"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/mezera_8dp"
+            android:ems="10"
+            android:inputType="text" >
+
+            <requestFocus />
+        </EditText>
+    </RelativeLayout>
+
+</RelativeLayout>

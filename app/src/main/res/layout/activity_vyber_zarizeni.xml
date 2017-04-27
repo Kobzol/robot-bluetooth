@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/kontajner"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cz.ghrabuvka.robotak.aktivity.VyberZarizeni"
+    tools:ignore="MergeRootFrame" >
+
+    <Button
+        android:id="@+id/tlacitko_vyhledat_zarizeni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_below="@+id/stav_bluetoothu"
+        android:onClick="ZacniVyhledavatZarizeni"
+        android:text="@string/vyhledani_vyhledat" />
+
+    <ListView
+        android:id="@+id/seznam_zarizeni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tlacitko_vyhledat_zarizeni"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/mezera_8dp" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/stav_bluetoothu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/mezera_8dp"
+        android:layout_marginLeft="@dimen/mezera_8dp"
+        android:layout_marginTop="@dimen/mezera_8dp"
+        android:text="@string/vyhledani_stav_bluetoothu" />
+
+</RelativeLayout>

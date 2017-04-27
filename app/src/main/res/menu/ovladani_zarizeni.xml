@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="cz.ghrabuvka.robotak.OvladaniZarizeni" >
+    
+    <item android:id="@+id/menu_detail_sonaru" android:title="@string/ovladani_menu_sonary" android:enabled="true" android:visible="true" android:showAsAction="ifRoom"></item><item android:id="@+id/menu_detail_kompasu" android:title="@string/ovladani_menu_kompas" android:enabled="true" android:visible="true" android:showAsAction="ifRoom"></item><item android:id="@+id/menu_upravit_prikazy" android:title="@string/prikazy_menu_upravit_prikazy" android:showAsAction="ifRoom" android:enabled="true" android:visible="true"></item>
+    
+
+</menu>

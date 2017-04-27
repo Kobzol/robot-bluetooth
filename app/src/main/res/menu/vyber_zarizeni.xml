@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="cz.ghrabuvka.robotak.VyberZarizeni" >
+    <item android:id="@+id/menu_bluetooth_zapnout" android:title="@string/menu_bluetooth_zapnout" android:enabled="true" android:visible="true" android:showAsAction="ifRoom"></item>
+
+</menu>
